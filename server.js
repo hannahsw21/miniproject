@@ -371,7 +371,7 @@ app.get('/api/restaurant/read/:criteria/:criValue',function(req,res){
     });
 });
 
-app.listen(process.env.PORT || 8099);
+app.listen(app.listen(process.env.PORT || 8099));
 
 function findRestaurants(db,criteria,limit,callback) {
     console.log("Finding Restaurant");
